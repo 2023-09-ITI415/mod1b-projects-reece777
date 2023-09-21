@@ -15,6 +15,7 @@ public class AppleTree : MonoBehaviour
     public float chanceToChangeDirection;
     //Rate apples will drop
     public float secondsBetweenAppleDrop;
+    
 
 
     // Start is called before the first frame update
