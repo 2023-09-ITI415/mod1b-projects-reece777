@@ -321,6 +321,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
+    - target: {fileID: 1035059062184453954, guid: 8c89c509c96af1e49811120dc8c3d76f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318021538350189516, guid: 8c89c509c96af1e49811120dc8c3d76f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461726134980391535, guid: 8c89c509c96af1e49811120dc8c3d76f, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742391334495594911, guid: 8c89c509c96af1e49811120dc8c3d76f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8210261631543822894, guid: 8c89c509c96af1e49811120dc8c3d76f, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -398,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0656af750d78aa94c85478e18a8b06d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
+  applePrefab: {fileID: 2908811635193815311, guid: 36c99885727707943887df0b2710136e, type: 3}
   speed: 10
   leftAndRightEdge: 20
   chanceToChangeDirection: 0.02
