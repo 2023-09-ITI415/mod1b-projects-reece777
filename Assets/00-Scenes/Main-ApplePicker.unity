@@ -418,7 +418,7 @@ MonoBehaviour:
   speed: 10
   leftAndRightEdge: 20
   chanceToChangeDirection: 0.02
-  secondsBetweenAppleDrop: 0
+  secondsBetweenAppleDrop: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
