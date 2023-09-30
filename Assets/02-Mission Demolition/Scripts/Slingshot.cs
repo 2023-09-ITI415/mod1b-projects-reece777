@@ -6,16 +6,24 @@ public class Slingshot : MonoBehaviour
 {
     public GameObject prefabProjectile;
     public float velocityMult = 8f; //a
-
-
+    static private Slingshot S; //a
     public GameObject launchPoint;
     public Vector3 launchPos;
     public GameObject projectile;
     public bool aimingMode;
     private Rigidbody projectileRigidbody; //a
 
+    static public Vector3 LAUNCH_POS
+    {
+        get
+        {
+            if (S == null) return Vector3.zero;
+            return S.launchPos;
+        }
+    }
      void Awake()
     {
+        S = this;
         Transform launchPointTrans = transform.Find("LaunchPoint"); //a
         launchPoint = launchPointTrans.gameObject;
         launchPoint.SetActive(false);
