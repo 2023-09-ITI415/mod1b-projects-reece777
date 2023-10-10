@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8074021897223462075}
   - component: {fileID: 1602390495303366654}
   - component: {fileID: 9051355047381797753}
+  - component: {fileID: -7470984806188447655}
   m_Layer: 0
   m_Name: Tutorial_Platform (1)
   m_TagString: TriggerZone
@@ -168,3 +169,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000001, y: 0.99999994, z: 0.99999994}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7470984806188447655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6834741055859094990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d506498b3310a4ea4c1cf3ae707f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redMaterial: {fileID: 2100000, guid: 662b90b119b3ff74e88bd192161951cf, type: 2}
+  greenMaterial: {fileID: 2100000, guid: e0f516fa4821aff43942d195f47b682e, type: 2}

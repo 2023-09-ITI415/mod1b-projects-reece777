@@ -33,10 +33,10 @@ public class PlatformFaller : MonoBehaviour
             //begin timer
             timer += Time.deltaTime;
 
-            //check if 5 secs have passed
-            if (timer >= 5f)
+            //check if 2 secs have passed
+            if (timer >= 2f)
             {
-                rb.useGravity = true; //enable gravity after 5 seconds
+                rb.useGravity = true; //enable gravity after 2 seconds
                 isTriggered = false; //reset trigger
             }
         }
