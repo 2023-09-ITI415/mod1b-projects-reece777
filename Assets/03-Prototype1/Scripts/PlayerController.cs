@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = movement;
 
         //check if player falls
-        if(transform.position.y < -1)
+        if(transform.position.y < -5)
         {
             //reload scene
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);

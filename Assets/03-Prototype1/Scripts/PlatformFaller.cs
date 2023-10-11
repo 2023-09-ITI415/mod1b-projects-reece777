@@ -40,6 +40,12 @@ public class PlatformFaller : MonoBehaviour
                 isTriggered = false; //reset trigger
             }
         }
+
+        //check if object falls 
+        if(transform.position.y < -10f)
+        {
+            Destroy(gameObject);
+        }
     }
 }
     
