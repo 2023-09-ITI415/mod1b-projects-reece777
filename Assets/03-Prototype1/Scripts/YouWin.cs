@@ -42,12 +42,14 @@ public class YouWin : MonoBehaviour
             RestartButton.SetActive(true);
             Time.timeScale = 0;
         }
+
+        
     }
 
     //restart button reloads scene
-    void Restartgame()
+    public void Restartgame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
     }
+
 }
