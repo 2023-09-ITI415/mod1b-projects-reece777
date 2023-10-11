@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,5 +24,12 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = new Vector3(horizontalInput, 0f, verticalInput) * moveSpeed;
         rb.velocity = movement;
+
+        //check if player falls
+        if(transform.position.y < -1)
+        {
+            //reload scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }
