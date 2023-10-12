@@ -19,33 +19,6 @@ public class YouWin : MonoBehaviour
         RestartButton.SetActive(false);
     }
 
-    //method to check if all playforms are destroyed
-    private bool AllPlatformsDestroyed()
-    {
-        foreach(GameObject platform in Platforms)
-        {
-            if(platform != null)
-            {
-                return false; //A platform is still active
-            }
-        }
-
-        return true; //all platforms are gone. 
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        if (AllPlatformsDestroyed())
-        {
-            //pauses the game and shows text and restart button
-            YouWinText.SetActive(true);
-            RestartButton.SetActive(true);
-            Time.timeScale = 0;
-        }
-
-        
-    }
-
     //restart button reloads scene
     public void Restartgame()
     {
