@@ -50,6 +50,11 @@ public class YouWin : MonoBehaviour
     public void Restartgame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        Time.timeScale = 0;
+        
+
+        
     }
 
 }
