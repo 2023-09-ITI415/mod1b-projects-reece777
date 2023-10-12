@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed = 5f;
     private Rigidbody rb;
+    private int count;
+    public GameObject YouWinText;
+    public GameObject RestartButton;
 
     // Start is called before the first frame update
 
@@ -30,6 +33,24 @@ public class PlayerController : MonoBehaviour
         {
             //reload scene
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+
+            if (count >= 9)
+            {
+                YouWinText.SetActive(true);
+                RestartButton.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
 }
