@@ -1,3 +1,6 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/o-3OZDLo)
-# Module1-Projects
- ApplePicker, Mission Demolition and Prototype 1
+
+
+My original goal was to create a roll-a-ball type game, but the goal of the game would be to survive as long as possible in an arena made up of platforms that drop shortly after you roll over them. I wasn't sure how to program the timer, so the goal than turned into simply making all the platforms drop without falling off yourself. This turned out to be pretty boring because you could just snake through pretty easily and get all the platforms without falling off. To fix this, I made the goal of the game to retrieve all the collectables scatttered throughout the arena. So what I ended with was roll-a-ball, but the arena consists of 56 platforms that drop 1 second after rolling over them. This augments the original roll-a-ball game by adding an extra sense of urgency. There is also meant to be an aspect of planning because you need to get the pickups in a particular sequence in order not to fall.
+
+In terms of the MDA framework, I started with the mechanic rather than the aesthetic. This is largely due to roll-a-ball being my inspiration, and that game is a mechanic based game rather than an aesthetic one. The feeling that is meant to come from the platform drop mechanic is a sense of urgency and the threat of failure which was not present in roll-a-ball. 
+    
